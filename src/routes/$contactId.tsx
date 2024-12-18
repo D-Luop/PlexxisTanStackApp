@@ -24,7 +24,7 @@ export const Route = createFileRoute('/$contactId')({
     const contact = await fetchContactById(contactId);
     return { contact }; // Return an object with the fetched data
   },
-  pendingComponent: () => <div>Loading...</div>,
+  pendingComponent: () => <div className='min-h-screen bg-gray-950'><p>Loading...</p></div>,
   errorComponent: () => <div>Error loading contact</div>,
 });
 
