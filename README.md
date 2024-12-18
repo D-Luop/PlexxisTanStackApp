@@ -9,7 +9,12 @@ This project provides a simple contacts management app with a React frontend and
  **Download** the `docker-compose.yml` file from this repository
 
  Open a **Terminal** in the same directory as the docker-compose.yml file and **Run the app** using:
- `docker-compose up`
+**`docker-compose up`**
+
+This command will:
+- Pull the required frontend and backend images from Docker Hub.
+- Start the application containers.
+
 
 **Access Application:**
 > Frontend: http://localhost:3000
