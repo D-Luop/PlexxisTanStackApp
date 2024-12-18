@@ -1,9 +1,21 @@
-# Cosden Solutions Example Code
+# Contact Application Instructions
 
-This repository provides the code shown in a specific video.
+This project provides a simple contacts management app with a React frontend and Node.js backend.
 
-## Instructions
 
-1. Install dependencies by running `pnpm install` (or `npm`/`yarn`)
-2. Run in dev mode by running `pnpm run dev` (or `npm`/`yarn`)
-3. Enjoy and learn!
+### **How to run application:**
+ Install Docker and Docker Compose.
+
+ **Download** the `docker-compose.yml file` from the github repository:
+ https://github.com/D-Luop/PlexxisTanStackApp
+
+ Open a **Terminal** in the same directory as the docker-compose.yml file and **Run the app** using:
+ `docker-compose up`
+
+**Access Application:**
+> Frontend: http://localhost:3000
+
+
+Notes:
+Frontend is served using NGINX.
+Backend is a REST API server.
