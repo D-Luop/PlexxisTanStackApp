@@ -1,0 +1,18 @@
+#Change file name to "docker-compose.yml" and run using "docker-compose up"
+
+services:
+  frontend:
+    build:
+      context: .         # Build frontend using the root directory
+      dockerfile: ./src/Dockerfile   # Dockerfile is inside src
+    ports:
+      - "3000:80"              # Map NGINX to port 3000
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./api           # Build backend using the api directory
+      dockerfile: Dockerfile   # Dockerfile is inside api
+    ports:
+      - "5000:5000"            # Map backend to port 5000
