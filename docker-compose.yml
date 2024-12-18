@@ -1,20 +1,16 @@
 services:
-  backend:
-    build:
-      context: ./api              # Context is the 'api' folder
-      dockerfile: Dockerfile      # Dockerfile inside 'api'
-    ports:
-      - "5000:5000"
-    volumes:
-      - ./api:/app                # Mount the API code for live changes
-    restart: always
-
   frontend:
     build:
-      context: .                  # Context is the project root (where package.json is located)
-      dockerfile: ./src/Dockerfile # Dockerfile is inside the 'src' folder
+      context: .         # Build frontend using the root directory
+      dockerfile: ./src/Dockerfile   # Dockerfile is inside src
     ports:
-      - "3000:80"                 # Map NGINX port 80 to host port 3000
+      - "3000:80"              # Map NGINX to port 3000
     depends_on:
       - backend
-    restart: always
+
+  backend:
+    build:
+      context: ./api           # Build backend using the api directory
+      dockerfile: Dockerfile   # Dockerfile is inside api
+    ports:
+      - "5000:5000"            # Map backend to port 5000
