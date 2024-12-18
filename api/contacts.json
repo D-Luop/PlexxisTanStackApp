@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "firstName": "Person1",
+    "lastName": "OnePerson",
+    "email": "person1@persons.ca"
+  },
+  {
+    "firstName": "Person2",
+    "lastName": "TwoPerson",
+    "email": "person2@persons.ca",
+    "id": 2
+  },
+  {
+    "firstName": "Person3",
+    "lastName": "ThreePerson",
+    "email": "person3@persons.ca",
+    "id": 3
+  }
+]
