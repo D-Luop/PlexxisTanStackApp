@@ -4,7 +4,7 @@ This project provides a simple contacts management app with a React frontend and
 
 
 ### **How to run application:**
- Install Docker and Docker Compose.
+ Install Docker and Docker Compose: https://docs.docker.com/get-started/get-docker/
 
  **Download** the `docker-compose.yml file` from the github repository:
  https://github.com/D-Luop/PlexxisTanStackApp
